@@ -18,3 +18,9 @@ Il nous faut donc diviser le réseau nous étant donné en sous réseaux de 64 m
 2. L'interface appellée ```lo``` est l'interface de loopback.
 3. Pour désinstaller le paquet ```cloud-init``` on effectue la commande ```sudo apt remove cloud-init``` sur les deux machines.
 4. Afin de changer de manière permannente le hostname, il y a trois commandes à effectuer. La première commande est la suivante ```sudo hostnamectl set-hostname serveur```. La seconde étape est d'effectuer ```sudo nano /etc/hosts``` et de corriger toutes les occurences du nom du host. Et enfin pour que les changements soient effectif, il faut effectuer ```sudo reboot```.
+
+**Exercice 3:**
+1. On peut installer le paquet avec ```sudo apt install isc-dhcp-server```.
+
+
+vlan 14
