@@ -21,6 +21,8 @@ Il nous faut donc diviser le réseau nous étant donné en sous réseaux de 64 m
 
 **Exercice 3:**
 1. On peut installer le paquet avec ```sudo apt install isc-dhcp-server```.
+2. La commande pour définir de manière permanente l'adresse IP est ```ifconfig ens224 192.168.100.1 netmask 255.255.255.0```.
+3. 
 
 
 vlan 14
