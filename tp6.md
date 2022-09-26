@@ -21,8 +21,8 @@ Il nous faut donc diviser le réseau nous étant donné en sous réseaux de 64 m
 
 **Exercice 3:**
 1. On peut installer le paquet avec ```sudo apt install isc-dhcp-server```.
-2. La commande pour définir de manière permanente l'adresse IP est ```ifconfig ens224 192.168.100.1 netmask 255.255.255.0```.
-3. 
+2. La commande pour définir de manière permanente l'adresse IP est ```ifconfig ens224 192.168.100.1 netmask 255.255.255.0```. On peut vérifier la configuration avec ```ip a```.
+3. Le ```default-lease-time``` correspond au temps par défaut de l'expiration de l'adresse désignée pour le dhcp. Le ```max-lease-time``` est donc le temps maximal au bout duquel il changera l'adresse IP.
 
 
 vlan 14
