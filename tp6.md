@@ -21,8 +21,15 @@ Il nous faut donc diviser le réseau nous étant donné en sous réseaux de 64 m
 
 **Exercice 3:**
 1. On peut installer le paquet avec ```sudo apt install isc-dhcp-server```.
-2. La commande pour définir de manière permanente l'adresse IP est ```ifconfig ens224 192.168.100.1 netmask 255.255.255.0```. On peut vérifier la configuration avec ```ip a```.
+2. La commande pour définir de manière permanente l'adresse IP est ```netplan apply``` après avoir effectuer les modifications nécessaires. On peut vérifier la configuration avec ```ip a```.
 3. Le ```default-lease-time``` correspond au temps par défaut de l'expiration de l'adresse désignée pour le dhcp. Le ```max-lease-time``` est donc le temps maximal au bout duquel il changera l'adresse IP.
+4. Le port à renseigner est donc le ```enp0s8``` puisque c'est celui que l'on a reparamétré dans ce but.
+5. Afin de vérifier que le programme est actif, on peut effectuer ```service isc-dhcp-server status```.
+7. DHCPDISCOVER: requête du client servant à découvrir les serveurs dhcp disponible.
+   DHCPOFFER: réponse du serveur dhcp à la requête DHCPDISCOVER en offrant leur adresse ipv4.
+   DHCPREQUEST: réponse du client à la requête DHCPOFFER.
+   DHCPACK: réponse du serveur comprenant les configurations pour les paramètres réseau du client.
+8. 
 
 
 vlan 14
