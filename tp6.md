@@ -29,7 +29,8 @@ Il nous faut donc diviser le réseau nous étant donné en sous réseaux de 64 m
    DHCPOFFER: réponse du serveur dhcp à la requête DHCPDISCOVER en offrant leur adresse ipv4.
    DHCPREQUEST: réponse du client à la requête DHCPOFFER.
    DHCPACK: réponse du serveur comprenant les configurations pour les paramètres réseau du client.
-8. 
+8. Le fichier ```/var/lib/dhcp/dhcpd.leases``` contient les heures auquelles le serveur a attribué des adresses ip, ainsi que des paramètres et l'heure d'échéance de cette entrée. La commande ```dhcp-lease-list``` contient sous forme de tableau les adresses ip données à des adresses MAC avec d'autres infos.
+9. Les deux machines peuvent communiquer entre elle à l'aide de la commande ping.
 
 
 vlan 14
